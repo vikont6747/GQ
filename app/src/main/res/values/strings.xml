@@ -19,7 +19,8 @@ world\'s oldest and deepest freshwater lake.
 
     <string name="true_button">True</string>
     <string name="false_button">False</string>
-    <string name="next_button">Next</string>
+    <string name="next_button">&#62;</string>
+    <string name="back_button">&#60;</string>
     <string name="correct_toast">Correct!
 </string>
     <string name="incorrect_toast">Incorrect!
