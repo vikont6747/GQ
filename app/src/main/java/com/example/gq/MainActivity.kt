@@ -75,8 +75,12 @@ class MainActivity : AppCompatActivity() {
                 trueButton.isEnabled = false
                 falseButton.isEnabled = false
                 nextButton.isEnabled = false
-                startNewActivity()
+                    //startNewActivity()
+                val intent = Intent(this, CheatActivity::class.java)
+                intent.putExtra("otvValue", otv)
+                startActivity(intent)
             }
+
             quizViewModel.moveToNext()
             updateQuestion()
             updateQuestion()
@@ -129,8 +133,9 @@ class MainActivity : AppCompatActivity() {
             quizViewModel.currentQuestionAnswer
         val messageResId = if (userAnswer ==
             correctAnswer) {
-            R.string.correct_toast
             otv++
+            R.string.correct_toast
+
         } else {
             R.string.incorrect_toast
         }
